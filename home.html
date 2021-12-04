@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="css/loginStyle.css"><!--LoginStyles -->
+<link rel="stylesheet" href="css/modalStyle.css"><!--ModalStyles -->
+<link rel="stylesheet" href="css/navBarStyle.css"><!--navbar styles only-->
+<link rel = "stylesheet" href="css/homeStyle.css">
+
+<link rel="stylesheet" href="css/navbarTestStyle.css">    
+
+
+
+</head>
+<body style="background-image: none; background-color:#1D181F ">
+
+ <style>
+        
+     #Article{
+         margin: 100px;
+         
+     }
+    
+
+    .loginbox{
+        
+        width: 33vw;
+        height:80vh;
+        background-color:black;
+        
+        color:white;
+        top: 50%;
+        left:50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+         padding: 70px 30px;
+    }
+    .icon{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        position: absolute;
+        top:-50px;
+        left:calc(50% - 50px);
+    }
+    .loginbox h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .loginbox p{
+        margin: 0;
+        padding: 0;
+        font: font-weight bold;
+    }
+    .loginbox input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .loginbox input[type="text"],input[type="password"]
+    {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: rgb(32, 32, 32);
+        font-size: 16px;
+    }
+    .loginbox input[type="submit"]
+    {
+        border: 5px solid white;
+        outline: none;
+        height: 40px;
+        background: #1D181F;
+        color :white;
+         font-size: 18px;
+        border-radius: 20px;
+    }
+    .loginbox input[type="submit"]:hover
+    { cursor: pointer;
+        background:#F8632C;
+        transition-duration: 1s;
+        color: rgb(32, 32, 32);
+        
+    }
+    .loginbox a
+    { text-decoration:none;
+        font-size: 15px;
+        line-height: 20px;
+        color:white;
+        
+    }
+    
+    .loginbox a:hover{
+        color:#223438;
+        
+        
+    }
+    
+    
+</style><!--LoginStyle--->
+  <style>
+      .loginBtn{
+       
+          background-color: transparent;
+            color: #F8632C;
+            height: 80%;
+          font-family: 'Arial Nova';
+          width:100px;
+          padding: 5px;
+          font-weight: 500;
+          border: none;
+          font-size: 25px;
+          
+      }
+      
+      #search{
+          font-size: 30px;
+          margin-left: auto;
+          
+      }
+      
+      
+      #Header{
+          width: 100%;
+          height: 500px;
+          background-image: url(img/banner.png);
+      }
+      
+      
+      
+    
+</style> <!--Some Other OVerrides-->     
+               
+
+        
+
+        
+        
+        <!-- The LoginScreen Popover -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            
+            <div>
+                    <div class="loginbox"><!--This PArt is hidden-->
+                            <img src="./img/icon2.png" class="icon">
+                            <span class="close">&times;</span>
+                               <h1>Hello There</h1>
+                                <h1>Login to Sparkle</h1>
+                               <form>
+                                  <p>Username</p>
+                                   <input type="text" name="" placeholder="Enter Username" required>
+                                   <p>Password</p>
+                                   <input type="password" name="" placeholder="Enter Password" required>
+                                   <input type="submit" name="" value="login">
+                                   <a href="#" style="color: #F8632C" >Lost Your Password?</a><br>
+                                   <a href="password.html"  style="color: #F8632C">Don't have an account?</a>
+                                   
+                                   
+                                   
+                               </form>
+                                       
+                           </div>
+
+
+            </div> <!--Login is here hidden---->
+          </div>
+        
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">AboutUS</a>
+          <a href="#">Home</a>
+          <a href="sign up/SignUp.html">SignUp</a>
+          <a href="contactUs.html">ContactUS</a>
+        </div>
+  
+
+    <div class = "navbar">
+    
+        <div id = "menu">
+            <span class="row start-xs" style="font-size:40px;cursor:pointer; color: #F8632C;" onclick="openNav()">&#9776;</span>
+        </div>
+        <div id = "Name">
+            <button id="myBtn" class="loginBtn">Login</button>
+        </div>
+        <div id = "search">
+            <a href="">Sparkles.lk</a>
+        </div>
+        <div id = "cart">
+            <a href="ShopppingCart.html">Cart</a>
+
+        </div>
+
+    </div>
+
+    <div id = "Content">
+        
+        <div id = "Header">
+            
+        </div>
+        <h1>Welcome To Sparkles.</h1>
+        <h2>Be unique .Be You</h2>
+        
+        <div id = "Categories">
+            
+            
+            
+            <div id = "categoryGrid">
+                
+               <a href="./RingSearch.html" class="box">
+                   <img src="img/ring.jpg" />
+                      <h2><span>Rings -</span> Carved with Love.Carved for you </h2>
+                      
+                    </a>
+                    <a href="#" class="box">
+                         <img src="img/ring.jpg" />
+                            
+                      <h2><span>Earings -</span> Bring Out your inner beauty</h2>
+                     
+                    </a>
+                    <a href="#" class="box">
+                     <img src="img/ring.jpg" />
+                      <h2><span>Tiaras -</span> Let Your Jewelry do the talking</h2>
+                    
+                    </a>
+                    <a href="./NecklaceSearch.html" class="box">
+                    <img src="img/ring.jpg" />
+                      <h2><span>Necklaces-</span> Precious Stones for Precious Women</h2>
+                    
+                    </a>
+                    <a href="./RingSearch.html" class="box">
+                    <img src="img/ring.jpg" />
+                      <h2><span>Anklets-</span> Beautify your feet</h2>
+                    
+                    </a>
+                
+                      <a href="./RingSearch.html" class="box">
+                    <img src="img/ring.jpg" />
+                      <h2><span>HairClips-</span> hairclips! are fun</h2>
+                    
+                    </a>
+   
+            </div>
+            
+        <div id= "Article">
+        <a href="CelebCollection.html">
+        </a>
+        </div>
+            
+        </div>
+        
+        
+    <div id = "footer">
+        <h3 style="float: left; margin: 100px; color: aliceblue">Contact US</h3>
+        <h3 style="float: left; margin: 100px;color: aliceblue">FAQ</h3>
+        <h3 style="float: left; margin: 100px;color: aliceblue">DMCA</h3>
+        <h3 style="float: left; margin: 100px;color: aliceblue">Policy</h3>
+    </div>
+        
+    </div>
+
+
+
+    
+    
+    
+<script><!--Navigation Menu Slide IN Script-->
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script> <!-- script for the sidemenu-->
+ 
+<script>
+        
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+</script><!-- script for the modal-->
+
+
+</script> 
+
+</body>
+</html> 

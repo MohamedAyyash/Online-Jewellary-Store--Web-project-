@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>transparent sign up form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="formValidation.js"></script>
+
+<style>
+
+body{
+	background:url(pexel.jpeg);
+	background-size:cover;
+}
+.sign_up{
+	border-radius:5px;
+	background:black;
+	padding:20px;
+	width:420px;
+	margin:auto;
+	color:#fff;
+	font-size:16px;
+	font-family:verdana;
+	margin-top:100px;
+	opacity:0.5;
+}
+.sign_up h1{
+	text-align:center;
+	margin:0;
+	padding:0;
+
+}
+.sign_up input,select{
+	padding:12px 20px;
+	margin:8px 0;
+	display:inline-block;
+	border-1px solid #ccc;
+	border-radius:4px;
+	box-sizing:boder-box;
+	font-size:18px;
+	background:transparent;
+	color:white;
+	opacity:0.9;
+}
+.sign_up input[type=submit]{
+	width:100%;
+	border:none;
+	cursor:pointer;
+}	
+#fname{
+	width:49%;
+}
+#lname{
+	width:49%;
+}
+#email{
+	width:49%;
+}
+#password{
+	width:49.5%;
+}
+#re_password{
+	width:49%;
+}
+input[type=submit]:hover{
+	background:#45a049;
+	transition:0.6s;
+}
+option{
+	color:white;
+	background:black;
+}
+	
+
+
+</style>
+
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="Trendy Signup Form Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+
+
+
+
+</head>
+<body>
+	<div class="sign_up">
+	<form onsubmit='return formValidation()' ><br> <p id="formm"></p><br>
+	<h1>sign up here</h1>
+	<hr>
+	<label for="name"><p>Enter your first name</b></label><br>
+	<input type="text" name="fname" id="fname" placeholder="your first name" required>
+	<p id="p1"></p>
+	<label for="name"><p>Enter your last name<bp></label><br>
+	<input type="text" name="lname" id="lname" placeholder="your last name" required>
+	<p id="p2"></p>
+	<br><label for="mail"><b>Enter yout email address</b></label>
+	<input type="text" name="email" id="email" placeholder="your email address" required>
+	<p id="p3"></p>
+	<br><label for="pw"><b>Enter your password</b></label><br>
+	<input type="password" name="pass"  id="pass" placeholder="your password"  required>
+	
+	<br><label for="pw"><b>Re-enter your password</b></label>
+	<input type="password" name="cpass" id="cpass" placeholder="re-enter password" required>
+	<input type="button" name="btn" value="Confirm password" onclick="checkpassword()">
+	
+	<form name="myform">
+	
+	<br>Security question<br><br>What is the srilankan capital city?<br>
+	<input type="radio" name="q1" value="a">colombo</br>
+	<input type="radio" name="q1" value="b">Sri Jayawardenapura kotte</br>
+	<input type="radio" name="q1" value="c">kandy</br>
+	
+ 
+	 <div class="date_of_birth">
+	 <span style="font-size:18px";>Date of Birth</span><br>
+	 <select name="DOBmonth">
+	 <option>Month</option>
+	 <option value="January">January</option>
+	 <option value="February">February</option>
+	 <option value="March">March</option>
+	 <option value="April">April</option>
+	 <option value="May">May</option>
+	 <option value="June">June</option>
+	 <option value="July">July</option>
+	 <option value="August">August</option>
+	 <option value="September">September</option>
+	 <option value="Octomber">Octomber</option>
+	 <option value="November">November</option>
+	 <option value="December">December</option>
+	 </select>
+	 
+	 <select name="DOBday">
+	 <option>Day</option>
+	 <option value="1">1</option>
+	 <option value="2">2</option>
+	 <option value="3">3</option>
+	 <option value="4">4</option>
+	 <option value="5">5</option>
+	 <option value="6">6</option>
+	 <option value="7">7</option>
+	 <option value="8">8</option>
+	 <option value="9">9</option>
+	 <option value="10">10</option>
+	 <option value="11">11</option>
+	 <option value="11">11</option>
+	 <option value="12">12</option>
+	 <option value="13">13</option>
+	 <option value="14">14</option>
+	 <option value="15">15</option>
+	 <option value="16">16</option>
+	 <option value="17">17</option>
+	 <option value="18">18</option>
+	 <option value="19">19</option>
+	 <option value="20">20</option>
+	 <option value="21">21</option>
+	 <option value="22">22</option>
+	 <option value="23">23</option>
+	 <option value="24">24</option>
+	 <option value="25">25</option>
+	 <option value="26">26</option>
+	 <option value="27">27</option>
+	 <option value="28">28</option>
+	 <option value="29">29</option>
+	 <option value="30">30</option>
+	 <option value="31">31</option>
+	 </select>
+	 
+	 <select name="DOByear">
+	 <option>Year</option>
+	 <option value="1990">1990</option>
+	 <option value="1991">1991</option>
+	 <option value="1990">1992</option>
+	 <option value="1990">1993</option>
+	 <option value="1990">1994</option>
+	 <option value="1990">1995</option>
+	 <option value="1990">1996</option>
+	 <option value="1990">1997</option>
+	 <option value="1990">1998</option>
+	 <option value="1990">1999</option>
+	 <option value="1990">2000</option>
+	 <option value="1990">2001</option>
+	 </select>
+	 <br>
+	 <input type="radio" name="male" value="male">Male
+	 <input type="radio" name="female" value="femaile">Female
+	 <br><br>
+	 <fieldset>
+	
+	<legend>terms</legend>
+	
+	<div style="height:120px;width:300px;border:1px solid #ccc;font:14px/26px Georgia, Garamond, Serif;overflow:auto;">
+	WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT. BECAUSE SOME JURISDICTIONS DO NOT ALLOW FOR THE EXCLUSION OF IMPLIED WARRANTIES, THE ABOVE EXCLUSION OF IMPLIED WARRANTIES MAY NOT APPLY TO YOU.
+	</div>
+	
+	</fieldset>
+	 
+	 <input type="checkbox" id="check">I Accept terms and Conditions
+	 
+	 <input type="submit" value="Creat a Account">
+	 
+	 </div>
+
+	</form>
+	</div>
+	
+</body>
+</html>
